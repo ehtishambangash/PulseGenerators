@@ -1,0 +1,332 @@
+Component: Arm Compiler for Embedded 6.24 Tool: armlink [5f371500]
+
+==============================================================================
+
+Section Cross References
+
+    startup_lpc11xx.o(RESET) refers to startup_lpc11xx.o(STACK) for __initial_sp
+    startup_lpc11xx.o(RESET) refers to startup_lpc11xx.o(.text) for Reset_Handler
+    startup_lpc11xx.o(RESET) refers to timer32_0_irqhandler.o(PROGRAM) for TIMER32_0_IRQHandler
+    startup_lpc11xx.o(RESET) refers to timer32_1_irqhandler.o(PROGRAM) for TIMER32_1_IRQHandler
+    startup_lpc11xx.o(RESET) refers to pioint0_irqhandler.o(PROGRAM) for PIOINT0_IRQHandler
+    startup_lpc11xx.o(.text) refers to main.o(FLASH) for SystemInit
+    channelloc.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    channelloc.o(PROGRAM) refers (Special) to timer32_0_irqhandler.o(PROGRAM) for TIMER32_0_IRQHandler
+    channelloc.o(PROGRAM) refers (Special) to timer32_1_irqhandler.o(PROGRAM) for TIMER32_1_IRQHandler
+    channelloc.o(PROGRAM) refers to lcd_init1.o(PROGRAM) for LCD_init1
+    channelloc.o(PROGRAM) refers to lcd_data.o(PROGRAM) for LCD_data
+    channelloc.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    displaychan.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    displaychan.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    displaychan.o(PROGRAM) refers to print_string.o(PROGRAM) for print_string
+    displaymemloc.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    displaymemloc.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    displaymemloc.o(PROGRAM) refers to print_string.o(PROGRAM) for print_string
+    displayrecall.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    displayrecall.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    displayrecall.o(PROGRAM) refers to print_string.o(PROGRAM) for print_string
+    displayt0.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    displayt0.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    displayt0.o(PROGRAM) refers to print_string.o(PROGRAM) for print_string
+    displayt1.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    displayt1.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    displayt1.o(PROGRAM) refers to print_string.o(PROGRAM) for print_string
+    lcd_command.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    lcd_data.o(PROGRAM) refers (Special) to lcd_command.o(PROGRAM) for LCD_command
+    lcd_data.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    lcd_init.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    lcd_init.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    lcd_init1.o(PROGRAM) refers (Special) to busywait.o(PROGRAM) for BusyWait
+    lcd_init1.o(PROGRAM) refers (Special) to lcd_command.o(PROGRAM) for LCD_command
+    main.o(FLASH) refers (Special) to busywait.o(PROGRAM) for BusyWait
+    main.o(FLASH) refers (Special) to lcd_command.o(PROGRAM) for LCD_command
+    main.o(FLASH) refers (Special) to lcd_data.o(PROGRAM) for LCD_data
+    main.o(FLASH) refers (Special) to pioint0_irqhandler.o(PROGRAM) for PIOINT0_IRQHandler
+    main.o(FLASH) refers to init.o(PROGRAM) for init
+    main.o(FLASH) refers to lcd_init.o(PROGRAM) for LCD_init
+    main.o(FLASH) refers to name.o(PROGRAM) for Name
+    main.o(FLASH) refers to keypad_init.o(PROGRAM) for Keypad_init
+    main.o(FLASH) refers to chan_led_on.o(PROGRAM) for Chan_LED_on
+    memloc.o(PROGRAM) refers (Special) to lcd_data.o(PROGRAM) for LCD_data
+    memloc.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    memloc.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    memrec.o(PROGRAM) refers (Special) to busywait.o(PROGRAM) for BusyWait
+    memrec.o(PROGRAM) refers (Special) to lcd_data.o(PROGRAM) for LCD_data
+    memrec.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    name.o(PROGRAM) refers (Special) to busywait.o(PROGRAM) for BusyWait
+    name.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    name.o(PROGRAM) refers to print_string.o(PROGRAM) for print_string
+    pioint0_irqhandler.o(PROGRAM) refers (Special) to keypad_init.o(PROGRAM) for Keypad_init
+    pioint0_irqhandler.o(PROGRAM) refers (Special) to lcd_command.o(PROGRAM) for LCD_command
+    pioint0_irqhandler.o(PROGRAM) refers (Special) to lcd_data.o(PROGRAM) for LCD_data
+    pioint0_irqhandler.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    pioint0_irqhandler.o(PROGRAM) refers to lcd_init.o(PROGRAM) for LCD_init
+    pioint0_irqhandler.o(PROGRAM) refers to displayt0.o(PROGRAM) for DisplayT0
+    pioint0_irqhandler.o(PROGRAM) refers to displayt1.o(PROGRAM) for DisplayT1
+    pioint0_irqhandler.o(PROGRAM) refers to displaymemloc.o(PROGRAM) for DisplayMemLoc
+    pioint0_irqhandler.o(PROGRAM) refers to displaychan.o(PROGRAM) for DisplayChan
+    pioint0_irqhandler.o(PROGRAM) refers to displayrecall.o(PROGRAM) for DisplayRecall
+    pioint0_irqhandler.o(PROGRAM) refers to t0_value.o(PROGRAM) for T0_value
+    pioint0_irqhandler.o(PROGRAM) refers to t1_value.o(PROGRAM) for T1_value
+    pioint0_irqhandler.o(PROGRAM) refers to memloc.o(PROGRAM) for MemLoc
+    pioint0_irqhandler.o(PROGRAM) refers to channelloc.o(PROGRAM) for ChannelLoc
+    pioint0_irqhandler.o(PROGRAM) refers to memrec.o(PROGRAM) for MemRec
+    print_string.o(PROGRAM) refers to lcd_command.o(PROGRAM) for LCD_command
+    print_string.o(PROGRAM) refers to lcd_data.o(PROGRAM) for LCD_data
+    t0_value.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    t0_value.o(PROGRAM) refers to lcd_init1.o(PROGRAM) for LCD_init1
+    t0_value.o(PROGRAM) refers to lcd_data.o(PROGRAM) for LCD_data
+    t0_value.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    t0_value.o(PROGRAM) refers to memloc.o(PROGRAM) for MemLoc
+    t1_value.o(PROGRAM) refers (Special) to lcd_init.o(PROGRAM) for LCD_init
+    t1_value.o(PROGRAM) refers to lcd_init1.o(PROGRAM) for LCD_init1
+    t1_value.o(PROGRAM) refers to lcd_data.o(PROGRAM) for LCD_data
+    t1_value.o(PROGRAM) refers to busywait.o(PROGRAM) for BusyWait
+    t1_value.o(PROGRAM) refers to memloc.o(PROGRAM) for MemLoc
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_lpc11xx.o(HEAP), (0 bytes).
+
+1 unused section(s) (total 0 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BusyWait.s                               0x00000000   Number         0  busywait.o ABSOLUTE
+    Chan_LED_on.s                            0x00000000   Number         0  chan_led_on.o ABSOLUTE
+    ChannelLoc.s                             0x00000000   Number         0  channelloc.o ABSOLUTE
+    DisplayChan.s                            0x00000000   Number         0  displaychan.o ABSOLUTE
+    DisplayMemLoc.s                          0x00000000   Number         0  displaymemloc.o ABSOLUTE
+    DisplayRecall.s                          0x00000000   Number         0  displayrecall.o ABSOLUTE
+    DisplayT0.s                              0x00000000   Number         0  displayt0.o ABSOLUTE
+    DisplayT1.s                              0x00000000   Number         0  displayt1.o ABSOLUTE
+    Keypad_init.s                            0x00000000   Number         0  keypad_init.o ABSOLUTE
+    LCD_command.s                            0x00000000   Number         0  lcd_command.o ABSOLUTE
+    LCD_data.s                               0x00000000   Number         0  lcd_data.o ABSOLUTE
+    LCD_init.s                               0x00000000   Number         0  lcd_init.o ABSOLUTE
+    LCD_init1.s                              0x00000000   Number         0  lcd_init1.o ABSOLUTE
+    MemLoc.s                                 0x00000000   Number         0  memloc.o ABSOLUTE
+    MemRec.s                                 0x00000000   Number         0  memrec.o ABSOLUTE
+    Name.s                                   0x00000000   Number         0  name.o ABSOLUTE
+    PIOINT0_IRQHandler.s                     0x00000000   Number         0  pioint0_irqhandler.o ABSOLUTE
+    T0_value.s                               0x00000000   Number         0  t0_value.o ABSOLUTE
+    T1_value.s                               0x00000000   Number         0  t1_value.o ABSOLUTE
+    TIMER32_0_IRQHandler.s                   0x00000000   Number         0  timer32_0_irqhandler.o ABSOLUTE
+    TIMER32_1_IRQHandler.s                   0x00000000   Number         0  timer32_1_irqhandler.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.s                                   0x00000000   Number         0  main.o ABSOLUTE
+    print_string.s                           0x00000000   Number         0  print_string.o ABSOLUTE
+    startup_LPC11xx.s                        0x00000000   Number         0  startup_lpc11xx.o ABSOLUTE
+    RESET                                    0x00000000   Section      192  startup_lpc11xx.o(RESET)
+    .text                                    0x000000c0   Section       28  startup_lpc11xx.o(.text)
+    FLASH                                    0x000000dc   Section       24  main.o(FLASH)
+    PROGRAM                                  0x000000f4   Section        8  busywait.o(PROGRAM)
+    PROGRAM                                  0x000000fc   Section      276  channelloc.o(PROGRAM)
+    PROGRAM                                  0x00000210   Section       36  displaychan.o(PROGRAM)
+    string                                   0x00000226   Data           9  displaychan.o(PROGRAM)
+    PROGRAM                                  0x00000234   Section       44  displaymemloc.o(PROGRAM)
+    string                                   0x0000024a   Data          17  displaymemloc.o(PROGRAM)
+    PROGRAM                                  0x00000260   Section       44  displayrecall.o(PROGRAM)
+    string                                   0x00000276   Data          15  displayrecall.o(PROGRAM)
+    PROGRAM                                  0x0000028c   Section       36  displayt0.o(PROGRAM)
+    string                                   0x000002a2   Data           9  displayt0.o(PROGRAM)
+    PROGRAM                                  0x000002b0   Section       36  displayt1.o(PROGRAM)
+    string                                   0x000002c6   Data           9  displayt1.o(PROGRAM)
+    PROGRAM                                  0x000002d4   Section       40  init.o(PROGRAM)
+    .ARM.__at_0x02FC                         0x000002fc   Section        4  startup_lpc11xx.o(.ARM.__at_0x02FC)
+    PROGRAM                                  0x00000300   Section      144  keypad_init.o(PROGRAM)
+    PROGRAM                                  0x00000390   Section      160  lcd_command.o(PROGRAM)
+    PROGRAM                                  0x00000430   Section      160  lcd_data.o(PROGRAM)
+    PROGRAM                                  0x000004d0   Section      136  lcd_init.o(PROGRAM)
+    PROGRAM                                  0x00000558   Section       28  lcd_init1.o(PROGRAM)
+    PROGRAM                                  0x00000574   Section       48  memloc.o(PROGRAM)
+    PROGRAM                                  0x000005a4   Section        4  memrec.o(PROGRAM)
+    PROGRAM                                  0x000005a8   Section       40  name.o(PROGRAM)
+    string                                   0x000005be   Data          14  name.o(PROGRAM)
+    PROGRAM                                  0x000005d0   Section      560  pioint0_irqhandler.o(PROGRAM)
+    PROGRAM                                  0x00000800   Section       38  print_string.o(PROGRAM)
+    PROGRAM                                  0x00000828   Section       60  t0_value.o(PROGRAM)
+    PROGRAM                                  0x00000864   Section       60  t1_value.o(PROGRAM)
+    PROGRAM                                  0x000008a0   Section       60  timer32_0_irqhandler.o(PROGRAM)
+    PROGRAM                                  0x000008dc   Section       48  chan_led_on.o(PROGRAM)
+    PROGRAM                                  0x0000090c   Section       60  timer32_1_irqhandler.o(PROGRAM)
+    STACK                                    0x10000000   Section      512  startup_lpc11xx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$A:L22$X:L11$S22$IEEE1$~IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_lpc11xx.o(RESET)
+    __use_two_region_memory                  0x00000000   Number         0  main.o ABSOLUTE
+    Reset_Handler                            0x000000c1   Thumb Code     8  startup_lpc11xx.o(.text)
+    NMI_Handler                              0x000000c9   Thumb Code     2  startup_lpc11xx.o(.text)
+    HardFault_Handler                        0x000000cb   Thumb Code     2  startup_lpc11xx.o(.text)
+    SVC_Handler                              0x000000cd   Thumb Code     2  startup_lpc11xx.o(.text)
+    PendSV_Handler                           0x000000cf   Thumb Code     2  startup_lpc11xx.o(.text)
+    SysTick_Handler                          0x000000d1   Thumb Code     2  startup_lpc11xx.o(.text)
+    ADC_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    BOD_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    CAN_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    FMC_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    I2C_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    PIOINT1_IRQHandler                       0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    PIOINT2_IRQHandler                       0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    PIOINT3_IRQHandler                       0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    SSP0_IRQHandler                          0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    SSP1_IRQHandler                          0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    TIMER16_0_IRQHandler                     0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    TIMER16_1_IRQHandler                     0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    UART_IRQHandler                          0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    USB_FIQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    USB_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    WAKEUP_IRQHandler                        0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    WDT_IRQHandler                           0x000000d3   Thumb Code     0  startup_lpc11xx.o(.text)
+    SystemInit                               0x000000dd   Thumb Code     0  main.o(FLASH)
+    __main                                   0x000000dd   Thumb Code     0  main.o(FLASH)
+    BusyWait                                 0x000000f5   Thumb Code     0  busywait.o(PROGRAM)
+    ChannelLoc                               0x000000fd   Thumb Code     0  channelloc.o(PROGRAM)
+    DisplayChan                              0x00000211   Thumb Code     0  displaychan.o(PROGRAM)
+    DisplayMemLoc                            0x00000235   Thumb Code     0  displaymemloc.o(PROGRAM)
+    DisplayRecall                            0x00000261   Thumb Code     0  displayrecall.o(PROGRAM)
+    DisplayT0                                0x0000028d   Thumb Code     0  displayt0.o(PROGRAM)
+    DisplayT1                                0x000002b1   Thumb Code     0  displayt1.o(PROGRAM)
+    init                                     0x000002d5   Thumb Code     0  init.o(PROGRAM)
+    Keypad_init                              0x00000301   Thumb Code     0  keypad_init.o(PROGRAM)
+    LCD_command                              0x00000391   Thumb Code     0  lcd_command.o(PROGRAM)
+    LCD_data                                 0x00000431   Thumb Code     0  lcd_data.o(PROGRAM)
+    LCD_init                                 0x000004d1   Thumb Code     0  lcd_init.o(PROGRAM)
+    LCD_init1                                0x00000559   Thumb Code     0  lcd_init1.o(PROGRAM)
+    MemLoc                                   0x00000575   Thumb Code     0  memloc.o(PROGRAM)
+    MemRec                                   0x000005a5   Thumb Code     0  memrec.o(PROGRAM)
+    Name                                     0x000005a9   Thumb Code     0  name.o(PROGRAM)
+    PIOINT0_IRQHandler                       0x000005d1   Thumb Code     0  pioint0_irqhandler.o(PROGRAM)
+    print_string                             0x00000801   Thumb Code     0  print_string.o(PROGRAM)
+    T0_value                                 0x00000829   Thumb Code     0  t0_value.o(PROGRAM)
+    T1_value                                 0x00000865   Thumb Code     0  t1_value.o(PROGRAM)
+    TIMER32_0_IRQHandler                     0x000008a1   Thumb Code     0  timer32_0_irqhandler.o(PROGRAM)
+    Chan_LED_on                              0x000008dd   Thumb Code     0  chan_led_on.o(PROGRAM)
+    TIMER32_1_IRQHandler                     0x0000090d   Thumb Code     0  timer32_1_irqhandler.o(PROGRAM)
+    __initial_sp                             0x10000200   Data           0  startup_lpc11xx.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000dd
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000948, Max: 0x00008000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000948, Max: 0x00008000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO            3    RESET               startup_lpc11xx.o
+    0x000000c0   0x000000c0   0x0000001c   Code   RO            5    .text               startup_lpc11xx.o
+    0x000000dc   0x000000dc   0x00000018   Code   RO           52  * FLASH               main.o
+    0x000000f4   0x000000f4   0x00000008   Code   RO           13    PROGRAM             busywait.o
+    0x000000fc   0x000000fc   0x00000114   Code   RO           16    PROGRAM             channelloc.o
+    0x00000210   0x00000210   0x00000024   Code   RO           19    PROGRAM             displaychan.o
+    0x00000234   0x00000234   0x0000002c   Code   RO           22    PROGRAM             displaymemloc.o
+    0x00000260   0x00000260   0x0000002c   Code   RO           25    PROGRAM             displayrecall.o
+    0x0000028c   0x0000028c   0x00000024   Code   RO           28    PROGRAM             displayt0.o
+    0x000002b0   0x000002b0   0x00000024   Code   RO           31    PROGRAM             displayt1.o
+    0x000002d4   0x000002d4   0x00000028   Code   RO           34    PROGRAM             init.o
+    0x000002fc   0x000002fc   0x00000004   Code   RO            4    .ARM.__at_0x02FC    startup_lpc11xx.o
+    0x00000300   0x00000300   0x00000090   Code   RO           37    PROGRAM             keypad_init.o
+    0x00000390   0x00000390   0x000000a0   Code   RO           40    PROGRAM             lcd_command.o
+    0x00000430   0x00000430   0x000000a0   Code   RO           43    PROGRAM             lcd_data.o
+    0x000004d0   0x000004d0   0x00000088   Code   RO           46    PROGRAM             lcd_init.o
+    0x00000558   0x00000558   0x0000001c   Code   RO           49    PROGRAM             lcd_init1.o
+    0x00000574   0x00000574   0x00000030   Code   RO           55    PROGRAM             memloc.o
+    0x000005a4   0x000005a4   0x00000004   Code   RO           58    PROGRAM             memrec.o
+    0x000005a8   0x000005a8   0x00000028   Code   RO           61    PROGRAM             name.o
+    0x000005d0   0x000005d0   0x00000230   Code   RO           64    PROGRAM             pioint0_irqhandler.o
+    0x00000800   0x00000800   0x00000026   Code   RO           67    PROGRAM             print_string.o
+    0x00000826   0x00000826   0x00000002   PAD
+    0x00000828   0x00000828   0x0000003c   Code   RO           70    PROGRAM             t0_value.o
+    0x00000864   0x00000864   0x0000003c   Code   RO           73    PROGRAM             t1_value.o
+    0x000008a0   0x000008a0   0x0000003c   Code   RO           76    PROGRAM             timer32_0_irqhandler.o
+    0x000008dc   0x000008dc   0x00000030   Code   RO           79    PROGRAM             chan_led_on.o
+    0x0000090c   0x0000090c   0x0000003c   Code   RO           82    PROGRAM             timer32_1_irqhandler.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x10000000, Load base: 0x00000948, Size: 0x00000200, Max: 0x00001000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000000        -       0x00000200   Zero   RW            1    STACK               startup_lpc11xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+         8          0          0          0          0        220   busywait.o
+        48         16          0          0          0        236   chan_led_on.o
+       276         76          0          0          0        308   channelloc.o
+        36         14          0          0          0        228   displaychan.o
+        44         22          0          0          0        236   displaymemloc.o
+        44         22          0          0          0        236   displayrecall.o
+        36         14          0          0          0        228   displayt0.o
+        36         14          0          0          0        228   displayt1.o
+        40         18          0          0          0        216   init.o
+       144         62          0          0          0        264   keypad_init.o
+       160         28          0          0          0        284   lcd_command.o
+       160         26          0          0          0        280   lcd_data.o
+       136         38          0          0          0        256   lcd_init.o
+        28          8          0          0          0        228   lcd_init1.o
+        24          0          0          0          0        212   main.o
+        48         14          0          0          0        228   memloc.o
+         4          0          0          0          0        216   memrec.o
+        40         18          0          0          0        216   name.o
+       560         38          0          0          0        500   pioint0_irqhandler.o
+        38          0          0          0          0        240   print_string.o
+        32         12        192          0        512        804   startup_lpc11xx.o
+        60          4          0          0          0        240   t0_value.o
+        60          4          0          0          0        240   t1_value.o
+        60         14          0          0          0        264   timer32_0_irqhandler.o
+        60         16          0          0          0        264   timer32_1_irqhandler.o
+
+    ----------------------------------------------------------------------
+      2184        478        192          0        512       6872   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2184        478        192          0        512       6872   Grand Totals
+      2184        478        192          0        512       6872   ELF Image Totals
+      2184        478        192          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2376 (   2.32kB)
+    Total RW  Size (RW Data + ZI Data)               512 (   0.50kB)
+    Total ROM Size (Code + RO Data + RW Data)       2376 (   2.32kB)
+
+==============================================================================
+
