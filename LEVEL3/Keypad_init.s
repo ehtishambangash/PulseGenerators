@@ -59,4 +59,5 @@ Keypad_init
 	STR R5, [R4]
 	
 	POP {R0-R7,PC}
+	ALIGN
 	END

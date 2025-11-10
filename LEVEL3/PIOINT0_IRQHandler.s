@@ -535,4 +535,5 @@ keypad
 		
 	POP{R0-R4,PC}
 	BX LR
+	ALIGN
 	END
