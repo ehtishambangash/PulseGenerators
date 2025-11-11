@@ -11,4 +11,5 @@ delay
 	BNE		delay
 
 	POP {R0-R7,PC}
+	ALIGN
 	END

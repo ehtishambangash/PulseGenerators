@@ -32,4 +32,5 @@ Chan_LED_on
 	STR R1, [R0];
 	
 	POP {R0-R7,PC}
+	ALIGN
 	END

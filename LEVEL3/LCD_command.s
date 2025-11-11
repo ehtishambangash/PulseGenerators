@@ -122,4 +122,5 @@ Load_LowerDB
 	BL BusyWait
 	
 	POP {R0-R7,PC}
+	ALIGN
 	END
